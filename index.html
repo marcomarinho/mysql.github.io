@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MySQL</title>
+	<link rel="stylesheet" href="css/material.css"/>
+	<link rel="stylesheet" href="demo-files/demo.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Material Framework is an easy to use Material Design Framework for the web.">
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+		<style>
+	.container {margin-top: 25px;}
+	footer {background: #212121;}
+	footer p {text-align: center; color: #fff; line-height: 50px;}
+		</style>
+</head>
+<body>
+<div class="sidemenu sidebar responsive" id="navigation-sidemenu" hidden>
+	<div class="sidemenu-hero">
+		<img class="sidemenu-hero-image" src="img/sidemenu-hero.jpg">
+	</div>
+	<ul class="menu">
+		<li ripple><a href="#introducao"><i class="icon-info-outline"></i>Introdução</a></li>
+		<li class="divider"></li>
+		<h2 class="subheading">Indíce</h2>
+		<li ripple><a href="#historia"><i class="icon-account-balance"></i>História</a></li>
+		<li ripple><a href="#carateristicas"><i class="icon-blur-on"></i>Caraterísticas</a></li>
+		<li ripple><a href="#organizacao"><i class="icon-subject"></i>Organização</a></li>
+		<li class="divider"></li>
+		<li ripple><a href="#bibliografia"><i class="icon-check-circle-outline"></i>Bibliografia</a></li>
+	</ul>
+</div>
+</div>
+<div class="main-content">
+<div class="toolbar header bg-blue-500 color-white">
+	<button class="icon-button" onclick="SideMenu.toggle(document.querySelector('#navigation-sidemenu'))"><i class="icon-menu"></i></button>
+	<label class="toolbar-label">MySQL</label>
+	<span class="float-right" id="switch-container">
+		<div class="switch">
+			<input type="checkbox" id="dark-theme-switch" onchange="Theme.setTheme(this.checked ? 'dark' : 'light')"/>
+			<label for="dark-theme-switch"></label>
+			<label class="form-control-label">Mudar para Preto</label>
+		</div>
+	</span>
+	<span class="float-right" id="external-fab-container">
+		<a href="http://mysql.com" class="fab color-black" target="_blank"><i class="icon-launch"></i></a>
+	</span>
+</div>
+<div class="navigation-section" id="introducao">
+	<div class="section">
+		<h2>O que é ?</h2>
+		<p>O <a href="https://www.mysql.com/">MySQL</a> é um sistema de gestão de base de dados (SGBD), que utiliza a linguagem SQL (Linguagem de Consulta Estruturada, do inglês <i>Structured Query Language</i>) como interface. É atualmente um dos bancos de dados mais populares , com mais de 10 milhões de instalações pelo mundo. </p>
+		<p>É usado por muitas empresas de grande nome, entre elas:</p>
+		<div class="card rich-card">
+			<div class="card-hero" style="background-image: url('img/nasa.png')">
+			</div>
+			<div class="divider"></div>
+			<div class="card-footer">
+				<button class="button flat"><a href="https://www.nasa.gov/" target="_blank">Visitar WebSite</a></button>
+			</div>
+		</div>
+		<div class="card rich-card">
+			<div class="card-hero" style="background-image: url('img/hp.png')">
+			</div>
+			<div class="divider"></div>
+			<div class="card-footer">
+				<button class="button flat"><a href="https://www.hp.com/" target="_blank">Visitar WebSite</a></button>
+			</div>
+		</div>
+		<div class="card rich-card">
+			<div class="card-hero" style="background-image: url('img/sony.png')">
+			</div>
+			<div class="divider"></div>
+			<div class="card-footer">
+				<button class="button flat"><a href="https://www.sony.pt/" target="_blank">Visitar WebSite</a></button>
+			</div>
+		</div>
+		<div class="card rich-card">
+			<div class="card-hero" style="background-image: url('img/lufthansa.png')">
+			</div>
+			<div class="divider"></div>
+			<div class="card-footer">
+				<button class="button flat"><a href="https://www.lufthansa.com/" target="_blank">Visitar WebSite</a></button>
+			</div>
+		</div>
+		<div class="card rich-card">
+			<div class="card-hero" style="background-image: url('img/google.png')">
+			</div>
+			<div class="divider"></div>
+			<div class="card-footer">
+				<button class="button flat"><a href="https://www.google.pt/" target="_blank">Visitar WebSite</a></button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="navigation-section" id="historia">
+	<div class="section">
+		<p>Criado na Suécia por dois suecos <i>David Axmark</i> e <i>Allan Larsson</i> e um finlandês <i>Michael "Monty" Widenius</i>, que têm trabalhado juntos desde a década de 1980. </p>
+		<p>Atualmente o seu desenvolvimento e manutenção emprega aproximadamente 400 profissionais no mundo inteiro, e mais de mil contribuem testando o software, integrando-o em outros produtos e escrevendo documentos técnicos.</p>
+		<p>Em 2008, a MySQL AB empresa que iniciou o desenvolvimento do MySQL, foi adquirida pela Sun Microsystems, por US$ 1 bilião, um preço nunca antes atingido na área do software de licenças livres.</p>
+		<p>Em 2009, a Oracle compraria a Sun Microsystems e todos os seus produtos, incluindo o MySQL.</p>
+		<p>O sucesso do MySQL deve-se em grande medida à fácil integração com o PHP permitindo criar práticamente todo o tipo de aplicações para a internet. Além das empresas acima indicadas, o Facebook, Twitter e Wikipedia são exemplos de utilização do MySQL em sites de enorme transação de dados.</p>
+	</div>
+</div>
+<div class="navigation-section" id="carateristicas">
+	<div class="section">
+		<ul>
+			<li>É um sistema que se utiliza na web;</li>
+			<li>É um sistema que corre num servidor;</li>
+			<li>Funciona bem tanto em pequenas como em grandes aplicações;</li>
+			<li>É muito rápido, fiável e fácil de utilizar;</li>
+			<li>Utiliza o SQL padrão;</li>
+			<li>É gratuito para download e utilização;</li>
+			<li>É desenvolvido, distribuído e suportado pela Oracle Corporation;</li>
+		</ul>
+	</div>
+</div>
+<div class="navigation-section" id="organizacao">
+	<div class="section">
+		<p>As bases de dados são úteis porque permitem armazenar a informação de uma forma lógica e organizada.</p>
+ 		<p>O MySQL baseia-se no modelo de bases de dados relacionais, isto é, os dados são armazenados em tabelas.</p>
+ 		<p>Uma tabela é uma coleção de dados relacionados que ficam estruturados em linhas e colunas.</p>
+ 		<p>Uma empresa pode ter que guardar informação dos seus funcionários, clientes, encomendas, etc. No sistema relacional cada uma dessas entidades transforma-se numa tabela e cada uma das tabelas vai se relacionar com outras para que toda a informação necessária possa ser consultada em qualquer instante.</p>
+		<p>Para fazer o download ou aprofundar conhecimentos do MySQL clique no link a seguir:</p>
+		<a href="http://www.mysql.com/downloads/" target="_blank" class="button raised bg-blue-500 color-white"><i class="icon-file-download"></i>Download</a>
+
+
+
+<!-- End content -->
+</div>
+<script src="js/material.js"></script>
+<script src="demo-files/demo.js"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" async></script>
+</body>
+</html>
